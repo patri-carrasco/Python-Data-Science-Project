@@ -45,3 +45,6 @@ for name, clf in zip(names, classifiers):
     scores.append(score)
 ~~~
 
+
+## Hyperparameter Tuning of Machine Learning Model in Python
+In this video, I will be showing you how to tune the hyperparameters of machine learning model in Python using the scikit-learn package.
