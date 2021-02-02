@@ -2,7 +2,10 @@
 
 
 ## Iris
-In this file we have created a Classification Model for the Iris data set
+As this exercise I have built an automatic learning model with the scikit-learn package in Python to build a simple classification model (to classify Iris flowers) using the random forest algorithm
+
+I have followed the video of the Professor Data Professor https://youtu.be/XmSlFPDjKdc.
+
 
 
 ## Comparing-classifiers
