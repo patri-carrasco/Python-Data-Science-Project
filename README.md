@@ -57,3 +57,36 @@ rf = RandomForestClassifier()
 
 grid = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5)
 ~~~
+
+
+# Machine Learning in Python: Building a Linear Regression Model
+We how to build a linear regression model in Python using the scikit-learn package. We will be using the Diabetes dataset (built-in data from scikit-learn) and the Boston Housing (download from GitHub) dataset.
+
+And We created our predictions:
+* 1 predictor, RM
+~~~
+
+X=df[["rm"]]
+# target
+Y=df["medv"]
+~~~
+* 2 predictor, RM
+~~~
+
+X=df[["rm", "lstat"]]
+# target
+Y=df["medv"]
+~~~
+* all predictors but the MEDV
+~~~
+
+X=df.drop("medv", axis=1)
+# target
+Y=df["medv"]
+~~~
+
+The best prediction, medv & rn:
+~~~
+score1': 0.48352545599133423,
+ 'mean_squared_error1': 43.60055177116956,
+ ~~~
