@@ -47,4 +47,13 @@ for name, clf in zip(names, classifiers):
 
 
 ## Hyperparameter Tuning of Machine Learning Model in Python
-In this video, I will be showing you how to tune the hyperparameters of machine learning model in Python using the scikit-learn package.
+You how to tune the hyperparameters of machine learning model in Python using the scikit-learn package.
+
+~~~ max_features_range = np.arange(1,6,1)
+n_estimators_range = np.arange(10,210,10)
+param_grid = dict(max_features=max_features_range, n_estimators=n_estimators_range)
+
+rf = RandomForestClassifier()
+
+grid = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5)
+~~~
