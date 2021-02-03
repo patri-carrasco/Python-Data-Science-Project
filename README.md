@@ -101,3 +101,7 @@ You how to perform principal component analysis (PCA) in Python using the scikit
 # How to Plot an ROC Curve in Python | Machine Learning in Python
 
 You how to plot the Receiver Operating Characteristic (ROC) curve in Python using the scikit-learn package. I will also you how to calculate the area under an ROC (AUROC) curve. In the tutorial, we will be comparing 2 classifiers via the ROC curve and the AUROC values.
+
+# Easy Web Scraping in Python using Pandas for Data Science
+
+You how to easily web scrape data from websites in Python using the pandas library. Particularly, the read_html() function or practically pd.read_html() will be used to extract table data of National Basketball Association (NBA) player stats from https://www.basketball-reference.com/​. We will then do some cleanup to produce the final data in the form of a dataframe. Finally, we will be doing a quick exploratory data analysis by making histogram plots.
