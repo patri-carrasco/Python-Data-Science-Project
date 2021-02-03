@@ -1,4 +1,4 @@
-# Data junior course
+# Python Data Science Project
 
 
 ## Iris
