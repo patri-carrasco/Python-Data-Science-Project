@@ -90,3 +90,9 @@ The best prediction, medv & rn:
 score1': 0.48352545599133423,
  'mean_squared_error1': 43.60055177116956,
  ~~~
+
+
+# Machine Learning in Python: Performing Principal Component Analysis (PCA)
+
+
+You how to perform principal component analysis (PCA) in Python using the scikit-learn package. PCA represents a powerful learning approach that enables the analysis of high-dimensional data as well as reveal the contribution of descriptors in governing the distribution of data clusters. Particularly, we will be creating PCA scree plot, scores plot and loadings plot.
