@@ -96,3 +96,8 @@ score1': 0.48352545599133423,
 
 
 You how to perform principal component analysis (PCA) in Python using the scikit-learn package. PCA represents a powerful learning approach that enables the analysis of high-dimensional data as well as reveal the contribution of descriptors in governing the distribution of data clusters. Particularly, we will be creating PCA scree plot, scores plot and loadings plot.
+
+
+# How to Plot an ROC Curve in Python | Machine Learning in Python
+
+You how to plot the Receiver Operating Characteristic (ROC) curve in Python using the scikit-learn package. I will also you how to calculate the area under an ROC (AUROC) curve. In the tutorial, we will be comparing 2 classifiers via the ROC curve and the AUROC values.
