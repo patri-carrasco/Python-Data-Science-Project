@@ -15,7 +15,8 @@ We will generate a synthetic classification dataset and compare an exhaustive se
 
 ####  Build Classification Models
 ### 1. Defining learning classifiers
-~~~names = ["Nearest_Neighbors", "Linear_SVM", "Polynomial_SVM", "RBF_SVM", "Gaussian_Process",
+~~~ python
+names = ["Nearest_Neighbors", "Linear_SVM", "Polynomial_SVM", "RBF_SVM", "Gaussian_Process",
          "Gradient_Boosting", "Decision_Tree", "Extra_Trees", "Random_Forest", "Neural_Net", "AdaBoost",
          "Naive_Bayes", "QDA", "SGD"]
 ​
@@ -37,7 +38,7 @@ classifiers = [
 ~~~
 #### 2 Build Model, Apply Model on Test Data & Record Accuracy Scores
 We create the score array to save the 14 predictions of the classifiers
-~~~
+~~~ python
 scores = []
 for name, clf in zip(names, classifiers):
     clf.fit(X_train, Y_train)
@@ -49,7 +50,8 @@ for name, clf in zip(names, classifiers):
 ## Hyperparameter Tuning of Machine Learning Model in Python
 You how to tune the hyperparameters of machine learning model in Python using the scikit-learn package.
 
-~~~ max_features_range = np.arange(1,6,1)
+~~~ python
+max_features_range = np.arange(1,6,1)
 n_estimators_range = np.arange(10,210,10)
 param_grid = dict(max_features=max_features_range, n_estimators=n_estimators_range)
 
@@ -64,21 +66,21 @@ We how to build a linear regression model in Python using the scikit-learn packa
 
 And We created our predictions:
 * 1 predictor, RM
-~~~
+~~~ python
 
 X=df[["rm"]]
 # target
 Y=df["medv"]
 ~~~
 * 2 predictor, RM
-~~~
+~~~ python
 
 X=df[["rm", "lstat"]]
 # target
 Y=df["medv"]
 ~~~
 * all predictors but the MEDV
-~~~
+~~~ python
 
 X=df.drop("medv", axis=1)
 # target
@@ -86,7 +88,7 @@ Y=df["medv"]
 ~~~
 
 The best prediction, medv & rn:
-~~~
+~~~ python
 score1': 0.48352545599133423,
  'mean_squared_error1': 43.60055177116956,
  ~~~
@@ -105,3 +107,50 @@ You how to plot the Receiver Operating Characteristic (ROC) curve in Python usin
 # Easy Web Scraping in Python using Pandas for Data Science
 
 You how to easily web scrape data from websites in Python using the pandas library. Particularly, the read_html() function or practically pd.read_html() will be used to extract table data of National Basketball Association (NBA) player stats from https://www.basketball-reference.com/​. We will then do some cleanup to produce the final data in the form of a dataframe. Finally, we will be doing a quick exploratory data analysis by making histogram plots.
+
+
+# Cheminformatics in Python: Predicting Solubility of Molecules | End-to-End Data Science Project
+
+Version python 3.7 
+
+In this video, I will show you step-by-step in this End-to-end Bioinformatics / Cheminformatics tutorial on how to use Data Science in a Computational Drug Discovery project as we reproduce the research work of Delaney by predicting the solubility of molecules in Python using scikit-learn, rdkit and pandas libraries. 
+
+### Linear Regression Model 
+1º Import
+~~~ python
+from sklearn import linear_model
+from sklearn.metrics import mean_squared_error, r2_score
+
+model = linear_model.LinearRegression()
+model.fit(X_train, Y_train)
+LinearRegression()
+~~~
+
+2 º Predicts the X_train
+~~~ python
+Y_pred_train = model.predict(X_train)
+print('Coefficients:', model.coef_)
+print('Intercept:', model.intercept_)
+print('Mean squared error (MSE): %.2f'
+      % mean_squared_error(Y_train, Y_pred_train))
+print('Coefficient of determination (R^2): %.2f'
+      % r2_score(Y_train, Y_pred_train))
+Coefficients: [-0.75311929 -0.00647419 -0.00720234 -0.43018103]
+Intercept: 0.27324370551875043
+Mean squared error (MSE): 0.99
+Coefficient of determination (R^2): 0.78
+~~~
+3º Predicts the X_test
+~~~ python
+Y_pred_test = model.predict(X_test)
+print('Coefficients:', model.coef_)
+print('Intercept:', model.intercept_)
+print('Mean squared error (MSE): %.2f'
+      % mean_squared_error(Y_test, Y_pred_test))
+print('Coefficient of determination (R^2): %.2f'
+      % r2_score(Y_test, Y_pred_test))
+Coefficients: [-0.75311929 -0.00647419 -0.00720234 -0.43018103]
+Intercept: 0.27324370551875043
+Mean squared error (MSE): 1.08
+Coefficient of determination (R^2): 0.71
+~~~ 
