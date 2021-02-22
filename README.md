@@ -154,3 +154,18 @@ Intercept: 0.27324370551875043
 Mean squared error (MSE): 1.08
 Coefficient of determination (R^2): 0.71
 ~~~ 
+
+
+
+# Exploratory Data Analysis in Python using pandas
+
+You how to perform basic data pre-processing and exploratory data analysis (EDA) in Python using the pandas library. For this tutorial, we will be performing exploratory data analysis to answer practical questions using the NBA Basketball player stats data that we had previously obtained via web scraping.
+
+Set_option show everything
+~~~python
+pd.set_option('display.max_rows', df.shape[0]+1)
+~~~
+Reverting back to the default
+~~~python
+pd.set_option('display.max_rows', 10)
+~~~
